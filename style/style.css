@@ -12,6 +12,10 @@
     flex-direction: column;
 }
 
+input[type="file"]{
+    align-self: flex-start;
+}
+
 .submit{
     align-self:flex-start;
     height: 20%;

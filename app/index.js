@@ -45,5 +45,6 @@ copyBtn.addEventListener("click", (event) => {
         document.execCommand("copy");        
     } catch (err) {
         console.error("Could not copy URLs: ", err);
-    }    
+    }
+    document.getSelection().removeAllRanges()    
 });

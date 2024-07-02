@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Parser</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="main">
+        <h1>URL Parser</h1>
+        <form id ="formID" class="form" action="" method="get">
+            <section class="inputSection">
+                <label class="button chooseBtn" for="textFile">Choose a file</label>
+                <input type="file" id="textFile" name="fileSelector" accept=".txt,.json" required>
+                <button class ="button submit" type="submit">Submit Button</button>
+            </section>
+            <div class="copyDiv">
+                <button class="copyBtn button">Copy URLs</button>
+            </div>
+        </form>
+        <p class="error"></p>       
+    </div>
+    <script src="app/index.js"></script>
+</body>
+</html>

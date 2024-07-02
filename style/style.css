@@ -1,26 +1,73 @@
+.body{
+    background-color: #9FADBD;
+}
+h1{
+    color: #3B4856;
+}
 .form{
     border: 1px solid red;
     display: flex;
     flex-direction: column;
     justify-content:space-evenly;
-    height: 150px;
+    /* height: 99px; */
+    background-color: #D5F4FF;
 }
 
 .inputSection{
-    gap: 5px;
     display: flex;
     flex-direction: column;
+    gap: 5px;
+    justify-content:flex-end;
+    /* height: 100%; */
+}
+
+.main{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid red;  
 }
 
 input[type="file"]{
-    align-self: flex-start;
+  height: 0;
+  padding: 0;
+  opacity: 0;
 }
 
-.submit{
-    align-self:flex-start;
-    height: 20%;
+.chooseBtn{    
+    border: 2px outset black;
+    padding: 0px 5px 0px 5px;
+    /* border-radius: 10%; */
+    box-shadow: 2px 1px 1px black outset;
 }
 
-button{
+.chooseBtn:active {
+    border-style: inset;    
+}
 
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #16B0D4;
+    color: white;
+    height: 25px;
+}
+
+.scrollable {
+    margin: 4px, 4px;
+    padding: 4px;    
+    width: 700px;
+    height: 200px;
+    border: 1px inset black;
+    overflow-x: auto;
+    overflow-y: auto;
+    text-align: justify;
+}
+
+.copyDiv{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
 }

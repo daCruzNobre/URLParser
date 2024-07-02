@@ -9,12 +9,15 @@
 <body>
     <div class="main">
         <h1>URL Parser</h1>
-        <form class="form" action="" method="get">
+        <form id ="formID" class="form" action="" method="get">
             <section class="inputSection">
-                <label for="textFile">Choose a file to Exract URL:</label>
+                <label class="button chooseBtn" for="textFile">Choose a file</label>
                 <input type="file" id="textFile" name="fileSelector" accept=".txt,.json" required>
+                <button class ="button submit" type="submit">Submit Button</button>
             </section>
-            <input class ="submit button"type="submit" value="submit Button">
+            <div class="copyDiv">
+                <button class="button">Copy URLs</button>
+            </div>
         </form>
         <style type="module" src="app/index.js"></style>
     </div>

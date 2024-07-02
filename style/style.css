@@ -1,73 +1,73 @@
-.body{
+body {
     background-color: #9FADBD;
-}
-h1{
     color: #3B4856;
 }
-.form{
-    border: 1px solid red;
-    display: flex;
-    flex-direction: column;
-    justify-content:space-evenly;
-    /* height: 99px; */
-    background-color: #D5F4FF;
+
+h1 {
+    color: #3B4856;
 }
 
-.inputSection{
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #9FADBD;
+}
+
+.inputSection {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    justify-content:flex-end;
-    /* height: 100%; */
+    justify-content: flex-end;
 }
 
-.main{
+.main {
     margin-top: 10%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid red;  
 }
 
-input[type="file"]{
-  height: 0;
-  padding: 0;
-  opacity: 0;
+input[type="file"] {
+    height: 0;
+    padding: 0;
+    opacity: 0;
 }
 
-.chooseBtn{    
+.chooseBtn {
     border: 2px outset black;
-    padding: 0px 5px 0px 5px;
-    /* border-radius: 10%; */
+    padding: 0 5px;
     box-shadow: 2px 1px 1px black outset;
 }
 
 .chooseBtn:active {
-    border-style: inset;    
+    border-style: inset;
 }
 
-.button{
+.button {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #16B0D4;
-    color: white;
+    color: white; 
     height: 25px;
 }
 
 .scrollable {
-    margin: 4px, 4px;
-    padding: 4px;    
+    padding: 4px;
     width: 700px;
     height: 200px;
     border: 1px inset black;
-    overflow-x: auto;
     overflow-y: auto;
     text-align: justify;
 }
 
-.copyDiv{
+.copyDiv {
     margin-top: 10px;
     display: flex;
     flex-direction: column;
+}
+
+.error {
+    display: none;
 }

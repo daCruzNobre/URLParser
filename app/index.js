@@ -3,16 +3,22 @@ const inputFile= document.querySelector("input[type='file']");
 const submitBtn = document.querySelector(".submit");
 const mainContainer = document.querySelector(".main");
 const copyBtn = document.querySelector(".copyBtn");
+const chooseBtn = document.querySelector(".chooseBtn");
+const filePicker = document.querySelector(".filePicker");
 const error = document.querySelector(".error");
 const regex = /https?:\/\/(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\\(\\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+/g;
 
+filePicker.addEventListener("change", (event) => {
+    const fileName = form.fileSelector.files[0].name;
+    chooseBtn.textContent = fileName;
+});
 submitBtn.addEventListener("click", (event) =>{
     event.preventDefault();
     // check if file was chosen
     // reset the error message to be hidden
     // read file, find urls in file, displays a textarea with the links
     error.style.display = "none";
-    if(form.fileSelector.value !== undefined){     
+    if(form.fileSelector.value !== undefined){
         const reader = new FileReader();
         reader.onload = function () {
             let url = reader.result.match(regex);

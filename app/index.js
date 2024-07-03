@@ -7,6 +7,7 @@ const chooseBtn = document.querySelector(".chooseBtn");
 const filePicker = document.querySelector(".filePicker");
 const error = document.querySelector(".error");
 const regex = /https?:\/\/(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\\(\\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+/g;
+const childNumber = mainContainer.childElementCount;
 
 // change button color and name when file is selected
 filePicker.addEventListener("change", (event) => {
@@ -60,8 +61,7 @@ copyBtn.addEventListener("click", (event) => {
 
 // function to clear the output everytime a new file is selected
 function clear(){
-    if(mainContainer.childElementCount >= 4){
+    if(mainContainer.childElementCount >= childNumber){
         mainContainer.removeChild(mainContainer.lastChild);
-    };
-    console.log(mainContainer.childElementCount);
+    };    
 };

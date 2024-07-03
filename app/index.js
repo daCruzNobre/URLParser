@@ -13,6 +13,7 @@ filePicker.addEventListener("change", (event) => {
     chooseBtn.textContent = fileName;
 });
 submitBtn.addEventListener("click", (event) =>{
+    clear();
     event.preventDefault();
     // check if file was chosen
     // reset the error message to be hidden
@@ -28,8 +29,7 @@ submitBtn.addEventListener("click", (event) =>{
             url.forEach(url => {
                 urlDiv.textContent += (url + "\n"); 
             });
-            mainContainer.appendChild(urlDiv);
-            
+            mainContainer.appendChild(urlDiv);            
         }
         const fileContents = reader.readAsText(inputFile.files[0]);
         
@@ -54,3 +54,11 @@ copyBtn.addEventListener("click", (event) => {
     }
     document.getSelection().removeAllRanges()    
 });
+
+// function to clear the output everytime a new file is selected
+function clear(){
+    if(mainContainer.childElementCount >= 4){
+        mainContainer.removeChild(mainContainer.lastChild);
+    };
+    console.log(mainContainer.childElementCount);
+};

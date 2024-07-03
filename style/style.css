@@ -59,7 +59,9 @@ input[type="file"] {
     height: 200px;
     border: 1px inset black;
     overflow-y: auto;
-    text-align: justify;
+    text-align: justify;    
+    background-color:#d8dee4;
+    color: #3B4856;
 }
 
 .copyDiv {

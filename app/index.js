@@ -8,10 +8,13 @@ const filePicker = document.querySelector(".filePicker");
 const error = document.querySelector(".error");
 const regex = /https?:\/\/(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\\(\\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+/g;
 
+// change button color and name when file is selected
 filePicker.addEventListener("change", (event) => {
     const fileName = form.fileSelector.files[0].name;
     chooseBtn.textContent = fileName;
+    chooseBtn.style.backgroundColor = "#14bd89";
 });
+
 submitBtn.addEventListener("click", (event) =>{
     clear();
     event.preventDefault();

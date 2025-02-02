@@ -1,0 +1,29 @@
+{
+  "name": "urlparser",
+  "version": "1.0.0",
+  "description": "URL parser and downloader",
+  "main": "server/app.js",
+  "type": "module",
+  "scripts": {
+    "start": "http-server -p 3000",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daCruzNobre/URLParser.git"
+  },
+  "keywords": [
+    "Downloader",
+    "URL",
+    "Node"
+  ],
+  "author": "Pedro da Cruz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daCruzNobre/URLParser/issues"
+  },
+  "homepage": "https://github.com/daCruzNobre/URLParser#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

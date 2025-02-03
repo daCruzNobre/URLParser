@@ -5,8 +5,8 @@
   "main": "server/app.js",
   "type": "module",
   "scripts": {
-    "start": "http-server -p 3000",
-    "test": "test"
+    "test": "test",
+    "dev": "nodemon server/app.js"
   },
   "repository": {
     "type": "git",

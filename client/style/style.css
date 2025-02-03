@@ -71,3 +71,9 @@ input[type="file"] {
 .error {
     display: none;
 }
+
+button:disabled{
+    border: 2px inset black;
+    background-color: #e8f9fd;
+    color: black;
+}
